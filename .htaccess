@@ -1,0 +1,26 @@
+## This is .HTACCESS file to control the GREEN API FRAMEWORK | An Open Source API FRAMEWORK##
+
+### START Here ###
+
+RewriteEngine On
+ErrorDocument 404 "<H1>Sorry!! Page not found</H1>"
+DirectoryIndex GAPIF.php index.php index.html
+
+<IfModule mod_headers.c>
+    Header add Access-Control-Allow-Origin "*"
+    Header add Access-Control-Allow-Credentials "True"
+</IfModule>
+
+#F##Header add Access-Control-Allow-Origin "*"
+#F##Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+#F##Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+## RewriteCond Set here
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# only Mods
+RewriteRule ^(.*)$ GAPIF.php?mods=$1    [QSA,L]
+
+## END Here ###

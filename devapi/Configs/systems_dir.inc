@@ -1,0 +1,21 @@
+<?php
+// File
+define('DBCon_MySQL_dbconfig', "{$ConfigDir}MySQL_dbconfig.inc");
+// Class
+define('Class_MySQLi', "{$LibsDir}Classes/ClassMySQLi.inc");
+// Functions
+define('Function_gmtDateTime', "{$LibsDir}Functions/Function_gmtDateTime.inc");
+define('Function_dt2mil2dt', "{$LibsDir}Functions/Function_dt2mil2dt.inc");
+define('Function_gmt2gmt0mil', "{$LibsDir}Functions/Function_gmt2gmt0mil.inc");
+define('Function_security_key', "{$LibsDir}Functions/security_key_function.inc");
+define('Function_getIp', "{$LibsDir}Functions/getIp_function.inc");
+define('Function_login_check', "{$LibsDir}Functions/login_check_function.inc");
+define('Function_gotourl', "{$LibsDir}Functions/gotourl_function.inc");
+define('Function_tuddc', "{$LibsDir}Functions/tuddc_function.inc");
+define('Function_get_all_option', "{$LibsDir}Functions/get_all_option_function.inc");
+define('Function_insertq', "{$LibsDir}Functions/insertq_function.inc");
+define('Function_updateq', "{$LibsDir}Functions/updateq_function.inc");
+define('Function_query_safe', "{$LibsDir}Functions/query_safe_function.inc");
+define('Function_in_array_value_exist', "{$LibsDir}Functions/in_array_value_exist_function.inc");
+define('Function_loan_cal', "{$LibsDir}Functions/loan_cal_function.inc");
+define('Function_array_to_xml', "{$LibsDir}Functions/array_to_xml_function.inc");
