@@ -18,6 +18,6 @@
 // Set default timezone
 date_default_timezone_set('Asia/Dhaka');
 // Set display_errors
-ini_set('display_errors', 'On');
+ini_set('display_errors', 'Off');
 // Set max_execution_time
 ini_set('max_execution_time', '30');
